@@ -76,7 +76,7 @@ const Layout = ({ children }) => {
         <a style={{
                   background: 'black',
                   color: 'white',
-                  padding: user?.isAdmin ? '8px 16px' : (user?.isDoctor ? '8px 16px' : '18px 16px'),
+                  padding: user?.isAdmin ? '8px 16px' : user?.isDoctor ? '8px 16px' : '18px 16px',
                   border: 'none',
                   borderRadius: '4px',
                   width: "100%",
