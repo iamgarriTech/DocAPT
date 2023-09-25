@@ -151,7 +151,7 @@ const ApplyDoctor = () => {
               required
               rules={[{ required: true }]}
             >
-              <Input type="file" onChange={handleFileChange}  placeholder="Passport" />
+              <Input type="file" onChange={handleFileChange} name="file" accept="image/*" placeholder="Passport" />
             </Form.Item>
           </Col>
           <Col xs={24} md={24} lg={8}>

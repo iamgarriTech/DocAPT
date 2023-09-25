@@ -59,6 +59,7 @@ const Layout = ({ children }) => {
       <div  className=' nav container b-b-line '>
       {getCurrentPath() === "/" && <h2>Home</h2>}
       {getCurrentPath() === "/appointments" && <h2>Appointments</h2>}
+      {getCurrentPath() === "/apply-doctor" && <h2>Doctor Application</h2>}
       {getCurrentPath() === "/doctor-list" && <h2>Doctors</h2>}
       {getCurrentPath() === "/doctor-appointments" && <h2>Appointments Dashboard</h2>}
       {getCurrentPath() === "/profile" && (
