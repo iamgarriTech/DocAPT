@@ -143,17 +143,7 @@ const ApplyDoctor = () => {
               <Input type="text" placeholder="your contact no" />
             </Form.Item>
           </Col>
-          <Col xs={24} md={24} lg={8}>
-            <Form.Item
-              label="Passport"
-              name="passport"
-              
-              required
-              rules={[{ required: true }]}
-            >
-              <Input type="file" onChange={handleFileChange} name="file" accept="image/*" placeholder="Passport" />
-            </Form.Item>
-          </Col>
+
           <Col xs={24} md={24} lg={8}>
             <Form.Item label="Timings" name="timings" required>
               <TimePicker.RangePicker format="HH:mm" />
