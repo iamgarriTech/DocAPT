@@ -8,7 +8,7 @@ const DoctorList = ({ doctor }) => {
   return (
     <>
       <div
-        className="card m-2"
+        className="card w-full m-2"
         
       >
         <div className="card-header">
@@ -25,8 +25,8 @@ const DoctorList = ({ doctor }) => {
             {doctor.specialization}
           </p>
 
-          <div style={{width: '60%', height: '100%', paddingLeft: 8, paddingRight: 8, paddingTop: 4, paddingBottom: 4, background: '#F9F5FF', borderRadius: 10, justifyContent: 'center', alignItems: 'center', gap: 10, display: 'inline-flex'}}>
-          <p style={{color: '#7F56D9', fontSize: 12, fontFamily: 'Poppins', fontWeight: '400', wordWrap: 'break-word'}}>
+          <div style={{width: '100%', height: '100%', paddingLeft: 8, paddingRight: 8, paddingTop: 4, paddingBottom: 4, background: '#F9F5FF', borderRadius: 10, justifyContent: 'center', alignItems: 'center', gap: 10, marginBottom:"6px",display: 'inline-flex'}}>
+          <p style={{color: '#7F56D9', fontSize: 12, fontFamily: 'Poppins', fontWeight: '400', }}>
  {doctor.timings[0]} - {doctor.timings[1]}
           </p>
           </div>

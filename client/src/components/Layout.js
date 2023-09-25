@@ -81,6 +81,7 @@ const Layout = ({ children }) => {
                   borderRadius: '4px',
                   width: "100%",
                   alignContent:"center",
+                  marginRight:"4px",
                   justifyContent:"center",
                   display:"flex",
                   
