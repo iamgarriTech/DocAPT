@@ -6,6 +6,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { Badge, message } from 'antd';
 import DoctorAppointments from './../pages/doctor/DoctorAppointments';
+import Appointments from './../pages/Appointments';
 
 
 const Layout = ({ children }) => {
@@ -65,6 +66,7 @@ const Layout = ({ children }) => {
       {getCurrentPath() === "/doctor-list" && <h2>Doctors</h2>}
       {getCurrentPath() === "/admin/doctors" && <h2>Doctors List</h2>}
       {getCurrentPath() === "/admin/users" && <h2>Users List</h2>}
+      {getCurrentPath() === "/doctor/book-appointment/:doctorId" && <h2>Doctor Appointments</h2>}
       {getCurrentPath() === "/doctor-appointments" && <h2>Appointments Dashboard</h2>}
       {getCurrentPath() === "/profile" && (
         <h2>My Profile</h2>
@@ -74,7 +76,7 @@ const Layout = ({ children }) => {
         <a style={{
                   background: 'black',
                   color: 'white',
-                  padding: user?.isAdmin ? '8px 16px':'18px 16px',
+                  padding: user?.isAdmin ? '8px 16px' : (user?.isDoctor ? '8px 16px' : '18px 16px'),
                   border: 'none',
                   borderRadius: '4px',
                   width: "100%",

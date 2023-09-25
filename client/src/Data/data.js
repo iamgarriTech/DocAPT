@@ -1,9 +1,9 @@
 export const userMenu = [
-  //{
-  //   name: "Home",
-  //   path: "/",
-  //   icon: "fa-solid fa-house",
-  // },
+  {
+     name: "Home",
+     path: "/",
+     icon: "fa-solid fa-house",
+  },
   {
     name: "View Appointments",
     path: "/appointments",
