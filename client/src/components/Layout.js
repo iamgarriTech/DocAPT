@@ -64,6 +64,7 @@ const Layout = ({ children }) => {
       {getCurrentPath() === "/apply-doctor" && <h2>Doctor Application</h2>}
       {getCurrentPath() === "/doctor-list" && <h2>Doctors</h2>}
       {getCurrentPath() === "/admin/doctors" && <h2>Doctors List</h2>}
+      {getCurrentPath() === "/admin/users" && <h2>Users List</h2>}
       {getCurrentPath() === "/doctor-appointments" && <h2>Appointments Dashboard</h2>}
       {getCurrentPath() === "/profile" && (
         <h2>My Profile</h2>
