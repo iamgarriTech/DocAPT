@@ -87,6 +87,21 @@ const Layout = ({ children }) => {
                   
                   
                 }} onClick={handleLogout}>Logout</a>
+        <a  href='/' style={{
+                  background: '#7F56D9',
+                  color: 'white',
+                  padding: user?.isAdmin || user?.isDoctor ? '8px 16px' : '18px 16px',
+                  border: 'none',
+                  borderRadius: '4px',
+                  width: "100%",
+                  alignContent:"center",
+                  textDecoration:"none",
+                  margin:"8px",
+                  justifyContent:"center",
+                  display:"flex",
+                  
+                  
+                }} >Home</a>
 
 {SidebarMenu.map((menu) => {
   const isActive = location.pathname === menu.path;
