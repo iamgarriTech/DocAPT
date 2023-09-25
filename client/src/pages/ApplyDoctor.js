@@ -147,10 +147,11 @@ const ApplyDoctor = () => {
             <Form.Item
               label="Passport"
               name="passport"
+              
               required
               rules={[{ required: true }]}
             >
-              <Input type="file" placeholder="Passport" />
+              <Input type="file" onChange={handleFileChange}  placeholder="Passport" />
             </Form.Item>
           </Col>
           <Col xs={24} md={24} lg={8}>
