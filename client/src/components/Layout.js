@@ -13,6 +13,8 @@ const Layout = ({ children }) => {
   const location = useLocation();
   const navigate = useNavigate();
 
+  const [isAdmin, setIsAdmin] = useState(false);
+
   // logout function
   const handleLogout = () => {
     localStorage.clear();
@@ -61,6 +63,7 @@ const Layout = ({ children }) => {
       {getCurrentPath() === "/appointments" && <h2>Appointments</h2>}
       {getCurrentPath() === "/apply-doctor" && <h2>Doctor Application</h2>}
       {getCurrentPath() === "/doctor-list" && <h2>Doctors</h2>}
+      {getCurrentPath() === "/admin/doctors" && <h2>Doctors List</h2>}
       {getCurrentPath() === "/doctor-appointments" && <h2>Appointments Dashboard</h2>}
       {getCurrentPath() === "/profile" && (
         <h2>My Profile</h2>
@@ -68,9 +71,9 @@ const Layout = ({ children }) => {
         {/* <h3 style={{width:"10%", color:"black"}} className='nav-button-h3'><a  style={{width:"10%", color:"black"}} className='text-dec'st href='/'>Dashboard</a></h3> */}
         <div style={{alignItems:"center",}}  className='d-flex'> 
         <a style={{
-                  background: '#7F56D9',
+                  background: 'black',
                   color: 'white',
-                  padding: '20px 16px',
+                  padding: user?.isAdmin ? '8px 16px':'18px 16px',
                   border: 'none',
                   borderRadius: '4px',
                   width: "100%",
