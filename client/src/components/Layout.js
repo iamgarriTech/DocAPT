@@ -26,11 +26,6 @@ const Layout = ({ children }) => {
   // =========== doctor menu ===============
   const doctorMenu = [
     {
-      name: 'Home',
-      path: '/',
-      icon: 'fa-solid fa-house',
-    },
-    {
       name: 'Appointments',
       path: '/doctor-appointments',
       icon: 'fa-solid fa-list',

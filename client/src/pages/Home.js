@@ -36,16 +36,30 @@ const Home = () => {
     },
    
     {
-      id: 1,
-      name: "General Out-patient Unit",
+      id: 5,
+      name: "Laboratory ",
       description: "An intensive care unit, also known as an intensive therapy unit or intensive treatment unit or critical care unit, is a special department of a hospital or health care facility that provides intensive care medicine.that provides intensive care medicine",
       link: "/doctorlist?category=cardiology", // Link to the cardiology doctor list page
       image: "https://res.cloudinary.com/dmgsdtmsm/image/upload/v1695628823/3_g5ag7n.png", // Link to the category image
     },
     {
-      id: 2,
-      name: "Pediatrics",
+      id: 6,
+      name: "Opthalmology",
       description: "Pediatrics is the branch of medicine that involves the medical care of infants, children, adolescents, and young adults.Lorem Ipsum, adolescents, and young adults.Lorem Ipsum, and young adults.Lorem Ipsum, adolescents, and young adults.Lorem Ipsum",
+      link: "/doctorlist?category=pediatrics", // Link to the pediatrics doctor list page
+      image: "https://res.cloudinary.com/dmgsdtmsm/image/upload/v1695628823/4_x3m9hv.png", // Link to the category image
+    },
+    {
+      id: 7,
+      name: "Nutrition and Dietetics",
+      description: "Pediatrics is the branch of medicine that involves the medical care of infants, children, adolescents, and young adults.Lorem Ipsum, adolescents, and young adults.Lorem Ipsum, and young adults.Lorem Ipsum, adolescents, and young adults.Lorem Ipsum",
+      link: "/doctorlist?category=pediatrics", // Link to the pediatrics doctor list page
+      image: "https://res.cloudinary.com/dmgsdtmsm/image/upload/v1695628823/4_x3m9hv.png", // Link to the category image
+    },
+    {
+      id: 8,
+      name: " Radiology",
+      description: "Radiology is the branch of medicine that involves the medical care of infants, children, adolescents, and young adults.Lorem Ipsum, adolescents, and young adults.Lorem Ipsum, and young adults.Lorem Ipsum, adolescents, and young adults.Lorem Ipsum",
       link: "/doctorlist?category=pediatrics", // Link to the pediatrics doctor list page
       image: "https://res.cloudinary.com/dmgsdtmsm/image/upload/v1695628823/4_x3m9hv.png", // Link to the category image
     },

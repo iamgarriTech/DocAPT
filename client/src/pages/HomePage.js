@@ -48,6 +48,12 @@ const HomePage = () => {
     "Radiology": "Radiologist",
     "Oncology": "Oncologist",
     "Pulmonology": "Pulmonologist",
+    "Laboratory": "Laboratory Technician",
+    "Pharmacy": "Pharmacist",
+    "Physiotherapy": "Physiotherapist",
+    "Nutrition and Dietetics": "Dietitian",
+
+
     // Add more mappings as needed
   };
   
